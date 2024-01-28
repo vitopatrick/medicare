@@ -14,7 +14,23 @@ navlist.addEventListener("click",()=>{
     document.body.classList.remove("open");
 })
 
+// get the buttons
+const contactUsButton = document.getElementById('contact-us-btn')
 
+contactUsButton.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    window.tidioChatApi.open()
+})
+
+// get the buttons
+const medicalBillButton = document.getElementById("tidioOpen");
+
+medicalBillButton.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    window.tidioChatApi.open()
+})
 
 
 
